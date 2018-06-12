@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maker271 Mall后台管理系统</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!--css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--html5,media query-->
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <script src="js/libs/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="g-hd">
+    <h1>Maker271&nbsp;Mall</h1>
+    <div class="m-log">
+        <span class="u-user">您好,admin</span>
+        <i class="fa fa-sign-out"></i>
+    </div>
+    <div class="u-mpnav"></div>
+</div>
+<nav class="navbar-default navbar-static-side sidebar" role="navigation">
+    <div class="sidebar-collapse sidebar-nav">
+        <ul class="nav blod" id="side-menu">
+            <li class="active">
+                <a href="#"><span class="nav-text">商品管理</span></a>
+                <ul class="nav normal">
+                    <li class="active"><a href="#" aria-expanded="true"><span>男装</span></a>
+                        <ul class="nav thin" aria-expanded="true">
+                            <li class="active choose"><a href="goods-manage.html" target="J_iframe"><i class="fa fa-chevron-right"></i>T恤</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>裤子</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>衬衣</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">女装</a>
+                        <ul class="nav thin">
+                            <li><a href="#" ><i class="fa fa-chevron-right"></i>T恤</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>裤子</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>衬衣</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="classify-add.html" target="J_iframe">添加分类</a>
+            </li>
+            <li>
+                <a href="order-manage.html" target="J_iframe">订单管理</a>
+            </li>
+            <li>
+                <a href="customer-manage.html" target="J_iframe">客户管理</a>
+            </li>
+            <li>
+                <a href="banner-manage.html" target="J_iframe">Banner管理</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="g-bd">
+    <iframe src="goods-manage.html" id="J_iframe" name="J_iframe"></iframe>
+</div>
+<script src="js/libs/jquery-3.3.1.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/libs/metisMenu.min.js"></script>
+<script src="js/operate.js"></script>
+<script>
+    $(function(){
+//metismenu插件调用
+        $("#side-menu").metisMenu();
+    });
+</script>
+</body>
+</html>

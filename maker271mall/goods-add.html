@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maker271 Mall后台管理系统-商品添加</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <!--css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/operate.css"/>
+    <!--html5,media query-->
+    <!--[if lt IE 9]>
+    <script src="js/libs/html5shiv.js"></script>
+    <script src="js/libs/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="g-hd">
+    <div class="m-tt">
+        <a href="#">商品管理</a>&gt;<a href="#">男装</a>&gt;<a href="goods-manage.html">T恤</a>&gt;<a href="#">添加</a>
+    </div>
+</div>
+<div class="g-bd">
+    <form action="" data-validator-option="{timely:1,theme:'yellow_right'}">
+        <div class="m-item-wrap">
+
+            <div class="m-item">
+                <label for="goodsName" class="category-name">商品名称：</label>
+                <input type="text" id="goodsName" data-rule="required;" data-tip="请输入商品名称" placeholder="请输入您的商品名称"/>
+            </div>
+            <div class="m-item">
+                <label for="goodsPrice" class="category-name">商品价格：</label>
+                <input type="text" id="goodsPrice" data-rule="required;digits" data-tip="请输入商品价格" placeholder="请输入您的商品价格"/>
+            </div>
+            <div class="m-item">
+                <label for="goodsNum" class="category-name">商品货号：</label>
+                <input type="text" id="goodsNum" data-rule="required;digits" data-tip="请输入商品货号" placeholder="20185466971"/>
+            </div>
+            <div class="m-item">
+                <label for="goodsSell" class="category-name">商品销量：</label>
+                <input type="text" id="goodsSell" data-rule="required;digits" data-tip="请输入商品销量" placeholder="201"/>
+            </div>
+            <div class="m-item">
+                <span class="category-name">商品类型</span>
+                <div class="goods-type">黑色</div>
+                <div class="goods-type">白色</div>
+                <div class="goods-type">红色</div>
+                <div class="goods-type">黄色</div>
+                <div class="goods-type"><i class="fa fa-plus"></i></div>
+            </div>
+            <div class="m-item">
+                <label for="goodsSell" class="category-name">商品库存：</label>
+                <input type="text" id="goodsStock" data-rule="required;digits" data-tip="请输入商品库存" placeholder="请输入您的库存"/>
+            </div>
+            <div class="m-item">
+                <label for="goodsSell" class="category-name">商品库存：</label>
+                <select name="" id="">
+                    <option value="是">是</option>
+                    <option value="否">否</option>
+                </select>
+            </div>
+            <div class="m-item">
+                <span class="category-name">商品图片：</span>
+                <div class="m-file img-small" data-ride="imagePrev">
+                    <label for="u-file1" class="u-file img-small">
+                        <i class="fa fa-plus f-mid"></i>
+                    </label>
+                    <div class="local-img">
+                        <img src="images/noPic.jpg" class="u-img img-small prev"/>
+                    </div>
+                    <div class="m-btn-file">
+                        <input id="u-file1" type="file" class="upload" accept="image/png, image/jpeg, image/gif, image/jpg" />
+                        <i class="fa fa-trash clear-img"></i>
+                    </div>
+                </div>
+                <div class="m-file img-small" data-ride="imagePrev">
+                    <label for="u-file2" class="u-file img-small">
+                        <i class="fa fa-plus f-mid"></i>
+                    </label>
+                    <div class="local-img">
+                        <img src="images/noPic.jpg" class="u-img img-small prev"/>
+                    </div>
+                    <div class="m-btn-file">
+                        <input id="u-file2" type="file" class="upload" accept="image/png, image/jpeg, image/gif, image/jpg" />
+                        <i class="fa fa-trash clear-img"></i>
+                    </div>
+                </div>
+                <div class="m-file img-small" data-ride="imagePrev">
+                    <label for="u-file3" class="u-file img-small">
+                        <i class="fa fa-plus f-mid"></i>
+                    </label>
+                    <div class="local-img">
+                        <img src="images/noPic.jpg" class="u-img img-small prev"/>
+                    </div>
+                    <div class="m-btn-file">
+                        <input id="u-file3" type="file" class="upload" accept="image/png, image/jpeg, image/gif, image/jpg" />
+                        <i class="fa fa-trash clear-img"></i>
+                    </div>
+                </div>
+                <div class="m-file img-small" data-ride="imagePrev">
+                    <label for="u-file4" class="u-file img-small">
+                        <i class="fa fa-plus f-mid"></i>
+                    </label>
+                    <div class="local-img">
+                        <img src="images/noPic.jpg" class="u-img img-small prev"/>
+                    </div>
+                    <div class="m-btn-file">
+                        <input id="u-file4" type="file" class="upload" accept="image/png, image/jpeg, image/gif, image/jpg" />
+                        <i class="fa fa-trash clear-img"></i>
+                    </div>
+                </div>
+                <div class="m-file img-small" data-ride="imagePrev">
+                    <label for="u-file5" class="u-file img-small">
+                        <i class="fa fa-plus f-mid"></i>
+                    </label>
+                    <div class="local-img">
+                        <img src="images/noPic.jpg" class="u-img img-small prev"/>
+                    </div>
+                    <div class="m-btn-file">
+                        <input id="u-file5" type="file" class="upload" accept="image/png, image/jpeg, image/gif, image/jpg" />
+                        <i class="fa fa-trash clear-img"></i>
+                    </div>
+                </div>
+                <span class="u-tip">上传图片尺寸为：1000px*1000px</span>
+            </div>
+            <div class="m-item">
+                <label for="goods-details">商品详情：</label>
+                <textarea name="" id="goods-details" class="ckeditor"></textarea>
+            </div>
+            <div class="m-item">
+                <label for="aaa" class="category-name">是否上架：</label>
+                <select name="" id="aaa">
+                    <option value="是">是</option>
+                    <option value="否">否</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="m-btn-operate">
+            <a href="#" class="u-cancel">取消</a>
+            <a href="#" class="u-submit">提交</a>
+        </div>
+    </form>
+</div>
+<script src="js/libs/jquery-3.3.1.min.js"></script>
+<script src="js/nicevalidator/jquery.validator.min.js?local=zh-CN"></script>
+<script src="js/ckeditor/ckeditor.js"></script>
+<script src="js/libs/jquery-imagePreview.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.42858;
+    font-size: 14px;
+    height: 100%;
+}
+input{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover,a:focus{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.f-cb:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.f-cb{
+    zoom: 1;
+}
+.f-ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.f-mid{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+/*À¶°×°´Å¥*/
+.u-cancel{
+    border: 1px solid;
+    color: rgb(60,125,193);
+    margin-right: 1rem;
+}
+.u-submit{
+    border: 1px solid rgb(60,125,193);
+    color: #fff;
+    background-color: rgb(60,125,193);
+}

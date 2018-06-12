@@ -1,0 +1,190 @@
+/*head*/
+.g-hd .m-tt{
+    font-size: 0;
+    background-color: rgb(245, 248, 253);
+}
+.m-tt .m-mark{
+    font-size: 16px;
+    padding-left: 4rem;
+    line-height: 4rem;
+    font-weight: 600;
+}
+.m-tt .m-mark a{
+    display: inline-block;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-size: 16px;
+}
+.m-tt .u-edit{
+    position: absolute;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 4rem;
+    right: 4rem;
+    top: 0;
+    color: rgb(60, 125, 193);
+}
+.g-hd .m-operate{
+    position: relative;
+    padding-left:4rem;
+    padding-right: 4rem;
+    line-height: 4rem;
+}
+.m-operate .m-search{
+    font-size: 0;
+    color: rgb(60, 125, 193);
+}
+.m-operate .m-search input{
+    vertical-align: middle;
+    padding: 6px 12px;
+    border-radius: 100px;
+    border:1px solid rgb(60, 125, 193);
+}
+.m-operate .m-search input:focus{
+    outline: none;
+}
+.m-operate .m-search a{
+    vertical-align: middle;
+    padding-left: 1rem;
+    font-weight: 300;
+    font-size: 22px;
+    color: rgb(60, 125, 193);
+}
+.m-operate .m-btn-operate{
+    position: absolute;
+    line-height: 4rem;
+    top: 0;
+    right: 4rem;
+}
+.m-operate .m-btn-operate a{
+    padding: .5rem 2rem;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgb(60, 125, 193);
+}
+.m-operate .m-btn-operate a:first-child{
+    margin-right: 1rem;
+}
+/*body*/
+.g-bd{
+    height: 62%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.g-bd .m-tb{
+    text-align: center;
+    color: rgb(89, 87, 87);
+    border: 1px solid rgb(211, 211, 211);
+    height: 100%;
+}
+.g-bd .u-thead{
+    line-height: 3.5rem;
+    background-color: rgb(238,238,237);
+    font-size: 0;
+}
+.u-thead .fa-sort{
+    cursor: pointer;
+}
+.g-bd .u-rows{
+    line-height: 3.5rem;
+    font-size: 0;
+}
+.g-bd .m-tb .u-row{
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.m-tb .five{
+    width: 20%;
+}
+.m-tb .six{
+    width: 16.66%;
+}
+.m-tb .seven{
+    width: 14.28%;
+}
+.m-tb .u-rows a{
+    padding:1rem .3rem;
+    color: rgb(89, 87, 87);
+    outline: none;
+}
+/*Ò³Âë*/
+.g-bd .m-page{
+    position: relative;
+    margin-top: 2rem;
+    line-height: 4rem;
+    background-color: rgb(238,238,237); ;
+}
+.m-page .u-btn-page{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.m-page .u-btn-page .u-normal{
+    display: inline-block;
+    border: 1px solid rgb(211, 212, 211);
+    line-height: 2rem;
+    width: 4rem;
+    text-align: center;
+}
+.m-page .u-btn-page input{
+    line-height: 2rem;
+    border: 1px solid rgb(60,125,193);
+    width: 4rem;
+    text-align: center;
+}
+.m-page .u-btn-page .u-blue{
+    display: inline-block;
+    border: 1px solid rgb(211, 212, 211);
+    line-height: 2rem;
+    width: 4rem;
+    text-align: center;
+    background-color: rgb(60,125,193);
+    color: #fff;
+}
+/*Ä£Ì¬¿ò*/
+.modal-footer{
+    border-top:0;
+}
+.modal-header{
+    border-bottom:0 ;
+}
+.modal button{
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+input{
+    line-height: normal;
+    font-size: 14px;
+}
+@media(max-width: 1024px){
+    .g-bd{
+        padding-left: 1rem;
+        padding-right:1rem ;
+    }
+    .m-tt .m-mark{
+        padding-left: 1rem;
+    }
+    .g-hd .m-operate{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .m-operate .m-btn-operate{
+        right: 1rem;
+    }
+    .m-tb .seven:last-child{
+        width: 22%;
+    }
+    .m-tb .seven:not(last-child){
+        width: 13%;
+    }
+}
+@media (max-width: 768px) {
+    .m-tb .seven:last-child{
+        width: 22%;
+    }
+    .m-tb .seven:not(last-child){
+        width: 13%;
+    }
+}
