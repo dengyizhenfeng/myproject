@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <title>非常会展后台管理系统-添加广告</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/operate.css"/>
+</head>
+<body>
+<div class="g-wrap2">
+    <div class="m-tt f-cb">
+        <h2 class="manage">添加广告</h2>
+        <a href="ad.html" class="u-btn-green u-btn-manage">广告管理</a>
+    </div>
+    <div class="g-bd2">
+        <form action="" data-validator-option="{timely:1}">
+            <div class="m-item">
+                <label for="adName" class="category-name"><i class="fa fa-asterisk"></i>广告名称：</label>
+                <input type="text" id="adName" placeholder="广告名称" data-rule="required;" data-tip="请输入广告名称"/>
+            </div>
+            <div class="m-item">
+                <label for="adSite" class="category-name"><i class="fa fa-asterisk"></i>广告位置：</label>
+                <select name="" id="adSite">
+                    <option value="首页广告1">首页广告1</option>
+                    <option value="首页广告2">首页广告2</option>
+                    <option value="首页广告3">首页广告3</option>
+                    <option value="首页广告4">首页广告4</option>
+                    <option value="首页广告5">首页广告5</option>
+                </select>
+            </div>
+            <div class="m-item">
+                <label for="aSite" class="category-name">链接地址：</label>
+                <input type="text" id="aSite" placeholder="链接地址" data-rule="required;url" data-tip="请输入链接地址"/>
+            </div>
+            <div class="m-item">
+                <label for="startTime" class="category-name"><i class="fa fa-asterisk"></i>开始时间：</label>
+                <input type="date" id="startTime" name="startDate" placeholder="2018-01-01" data-rule="开始时间:required;" data-tip="请输入开始时间"/>
+            </div>
+            <div class="m-item">
+                <label for="endTime" class="category-name"><i class="fa fa-asterisk"></i>结束时间：</label>
+                <input type="date" id="endTime" name="endTime" placeholder="2018-02-01" data-rule="结束时间:required;date;match(gt, startDate, date)" data-tip="请输入结束时间"/>
+            </div>
+            <div class="m-item">
+                <span class="category-name"><i class="fa fa-asterisk"></i>会展封面图：</span>
+                <div class="m-file">
+                    <label for="u-file" class="u-file"></label>
+                    <input type="file" id="u-file" accept="image/png, image/jpeg, image/gif, image/jpg" onchange="showPreview(this)">
+                    <img src="images/noPic.jpg" class="u-img" id="uImg" />
+                </div>
+                <span class="u-mark">上传图片尺寸为：361px*363px</span>
+            </div>
+            <div class="m-item">
+                <label for="open" class="category-name"><i class="fa fa-asterisk"></i>是否开启：</label>
+                <label for="open" class="u-choose"><input type="radio" name="onOff" id="open" value="开启" checked/>开启</label>
+                <label for="close" class="u-choose"><input type="radio" name="onOff" id="close" value="关闭"/>关闭</label>
+            </div>
+            <div class="m-item">
+                <label for="width1" class="category-name"><i class="fa fa-asterisk"></i>宽度(px)：</label>
+                <input type="text" id="width1" name="startDate" placeholder="200" data-rule="required;" data-tip="请输入开始时间"/>
+            </div>
+            <div class="m-item">
+                <label for="height1" class="category-name"><i class="fa fa-asterisk"></i>高度(px)：</label>
+                <input type="text" id="height1" name="startDate" placeholder="100" data-rule="required;" data-tip="请输入开始时间"/>
+            </div>
+            <div class="m-sub">
+                <div class="u-inline">
+                    <button id="sub"></button>
+                    <label for="sub" class="u-btn-green u-btn-ms">确定</label>
+                    <input type="reset" value="重置" class="u-btn-white u-btn-reset"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/nicevalidator/jquery.validator.min.js?local=zh-CN"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非常会展后台管理系统-添加商品</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/operate.css"/>
+</head>
+<body>
+<div class="g-wrap2">
+    <div class="m-tt f-cb">
+        <h2 class="manage">添加商品</h2>
+        <a href="goods.html" class="u-btn-green u-btn-manage">商品管理</a>
+    </div>
+    <div class="g-bd2">
+        <form action="" data-validator-option="{timely:1}">
+            <div class="m-item">
+                <label for="adName" class="category-name"><i class="fa fa-asterisk"></i>商品名称：</label>
+                <input type="text" id="adName" placeholder="商品名称" data-rule="required;" data-tip="请输入商品名称"/>
+            </div>
+            <div class="m-item">
+                <label for="adSite" class="category-name"><i class="fa fa-asterisk"></i>企业标识：</label>
+                <select name="" id="adSite">
+                    <option value="企业标识1">企业标识1</option>
+                    <option value="企业标识2">企业标识2</option>
+                    <option value="企业标识3">企业标识3</option>
+                    <option value="企业标识4">企业标识4</option>
+                    <option value="企业标识5">企业标识5</option>
+                </select>
+            </div>
+            <div class="m-item">
+                <label for="aSite" class="category-name">简介：</label>
+                <textarea name="" id="aSite" placeholder="简介"></textarea>
+            </div>
+            <div class="m-item">
+                <label for="open" class="category-name"><i class="fa fa-asterisk"></i>详细内容：</label>
+                <textarea name="" id="open"  data-rule="required;"></textarea>
+            </div>
+            <div class="m-item">
+                <span class="category-name"><i class="fa fa-asterisk"></i>会展封面图：</span>
+                <div class="m-file">
+                    <label for="u-file" class="u-file"></label>
+                    <input type="file" id="u-file" accept="image/png, image/jpeg, image/gif, image/jpg" onchange="showPreview(this)">
+                    <img src="images/noPic.jpg" class="u-img" id="uImg" />
+                </div>
+                <span class="u-mark">上传图片尺寸为：361px*363px</span>
+            </div>
+            <div class="m-sub">
+                <div class="u-inline">
+                    <button id="sub"></button>
+                    <label for="sub" class="u-btn-green u-btn-ms">确定</label>
+                    <input type="reset" value="重置" class="u-btn-white u-btn-reset"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/nicevalidator/jquery.validator.min.js?local=zh-CN"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

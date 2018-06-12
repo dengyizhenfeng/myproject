@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非常会展后台管理系统-添加新闻</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/operate.css"/>
+</head>
+<body>
+<div class="g-wrap2">
+    <div class="m-tt f-cb">
+        <h2 class="manage">添加新闻</h2>
+        <a href="news.html" class="u-btn-green u-btn-manage">新闻管理</a>
+    </div>
+    <div class="g-bd2">
+        <form action="" data-validator-option="{timely:1}">
+            <div class="m-item">
+                <label for="adName" class="category-name"><i class="fa fa-asterisk"></i>新闻标题：</label>
+                <input type="text" id="adName" placeholder="新闻标题" data-rule="required;" data-tip="请输入新闻标题"/>
+            </div>
+            <div class="m-item">
+                <label for="adSite" class="category-name"><i class="fa fa-asterisk"></i>分类：</label>
+                <select name="" id="adSite">
+                    <option value="参展技巧">参展技巧</option>
+                    <option value="展览须知">展览须知</option>
+                    <option value="现场实况">现场实况</option>
+                    <option value="市场咨询">市场咨询</option>
+                    <option value="展后报告">展后报告</option>
+                </select>
+            </div>
+            <div class="m-item">
+                <label for="startTime" class="category-name"><i class="fa fa-asterisk"></i>开始时间：</label>
+                <input type="date" id="startTime" name="startDate" placeholder="2018-01-01" data-rule="开始时间:required;" data-tip="请输入开始时间"/>
+            </div>
+            <div class="m-item">
+                <label for="endTime" class="category-name"><i class="fa fa-asterisk"></i>结束时间：</label>
+                <input type="date" id="endTime" name="endtime" placeholder="2018-02-01" data-rule="结束时间:required;date;match(gt, startDate, date)" data-tip="请输入结束时间"/>
+            </div>
+            <div class="m-item">
+                <label for="aSite" class="category-name">简介：</label>
+                <textarea name="" id="aSite" placeholder="简介"></textarea>
+            </div>
+            <div class="m-sub">
+                <div class="u-inline">
+                    <button id="sub"></button>
+                    <label for="sub" class="u-btn-green u-btn-ms">确定</label>
+                    <input type="reset" value="重置" class="u-btn-white u-btn-reset"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/nicevalidator/jquery.validator.min.js?local=zh-CN"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

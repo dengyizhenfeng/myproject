@@ -1,0 +1,134 @@
+.g-wrap{
+    margin-top: 35px;
+    padding-left: 3%;
+}
+/*表格标题*/
+.m-tt,.m-tb{
+    background-color: rgb(235,248,253);
+}
+.m-tt{
+    margin-bottom: .8rem;
+}
+.m-tt .manage{
+    display: inline-block;
+    padding-left: 2.5rem;
+    font-size: 18px;
+    line-height: 4rem;
+    vertical-align: middle;
+}
+.m-tt .u-btn-add{
+    float: right;
+    width: 8rem;
+    margin: .8rem 1.5rem;
+    font-weight: 500;
+    font-size: 16px;
+}
+/*表格*/
+.m-tb table{
+    width:100%;
+    border:1px solid #e2e2e2;
+    border-bottom: 0;
+    table-layout: fixed;
+}
+.m-tb th{
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+.m-tb td{
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #e2e2e2;
+}
+.u-btn-edit{
+    border: 1px solid;
+}
+.u-btn-del{
+    border:1px solid #3d8c49;
+    cursor: pointer;
+}
+/*页码*/
+.m-page{
+    background-color: rgb(235,248,253);
+    margin-bottom: 3.5rem;
+}
+.m-page ul{
+    width: 18rem;
+    height: 6rem;
+    margin-left: auto;
+    font-size: 0;
+    line-height: 6rem;
+}
+.m-page a{
+    margin-left: -2px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+}
+.m-page a:hover{
+    background-color: #eeeeee;
+}
+/*遮罩层*/
+.m-mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    left: 0;
+    top: 0;
+    display: none;
+}
+.m-tip{
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    left: 0;
+    right: 0;
+    margin:8rem auto;
+    background-color: rgb(255,255,255);
+    border: 3px solid rgba(0, 0, 0, .3);
+}
+.m-mask .m-tt1{
+    position: relative;
+    padding: .5rem 1rem;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 2rem;
+}
+.m-mask .m-tt1 span{
+    font-size: 20px;
+}
+.m-mask .m-tt1 i{
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+.m-mask .tips{
+    display: block;
+    margin: 0 auto;
+    width: 8rem;
+    font-size: 18px;
+    padding: 3rem 0 6rem 0;
+}
+.m-mask .u-sure{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+    cursor: pointer;
+}
+.m-mask .u-cancel{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    border: 1px solid;
+    cursor: pointer;
+}
+@media (max-width: 480px){
+    .u-btn-edit,.u-btn-del{
+        display: block;
+    }
+}

@@ -1,0 +1,183 @@
+.g-wrap2{
+    padding: 2rem 3rem;
+}
+.m-tt{
+    border-top:1px solid #e2e2e2;
+    border-left:1px solid #e2e2e2;
+    border-right:1px solid #e2e2e2;
+    background-color: rgb(235,248,253);
+}
+.m-tt .manage{
+    display: inline-block;
+    padding-left: 2.5rem;
+    font-size: 18px;
+    line-height: 4rem;
+    vertical-align: middle;
+}
+.m-tt .u-btn-manage{
+    float: right;
+    width: 8rem;
+    margin: .8rem 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+}
+/*form主体*/
+.g-bd2{
+    padding: 2.5rem 1rem 1rem 2.5rem;
+    border:1px solid #e2e2e2;
+}
+.m-item{
+    padding: 1rem 0;
+}
+.m-item>input[type=text],
+.m-item input[type=date],
+.m-item select{
+    width: 60%;
+    height: 2.5rem;
+    padding: .5rem .8rem;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+input:focus{
+    outline: none;
+    border-color: rgb(49,126,243);
+}
+.fa-asterisk{
+    margin-right: .5rem;
+    color: red;
+}
+.m-item .category-name{
+    display: inline-block;
+    width: 9rem;
+    text-align: right;
+}
+.m-file{
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    vertical-align: middle;
+}
+.m-item .u-file{
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+.m-file .u-img{
+    position: absolute;
+    z-index: 1;
+    width: 10rem;
+    height: 10rem;
+}
+.m-item input[type=file]{
+    display: none;
+}
+.m-item .u-mark{
+    color: #888;
+}
+.m-item .u-choose{
+    display: inline;
+    padding:2rem 0;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.m-item textarea{
+    vertical-align: middle;
+    width: 60%;
+    height: 8rem;
+    padding:.5rem 1rem ;
+}
+.m-item input[type=checkbox]{
+    cursor: pointer;
+}
+/*按钮*/
+.m-sub{
+    padding: 3rem 0;
+    text-align: center;
+}
+.m-sub .u-inline{
+    display: inline;
+}
+.m-sub .u-btn-reset,.m-sub .u-btn-ms{
+    border: 1px solid;
+    width: 7rem;
+    cursor: pointer;
+}
+.m-sub button{
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+.m-sub .u-btn-ms{
+    display: inline-block;
+    margin-right: .75rem;
+    text-align: center;
+}
+/*表格*/
+.m-item .m-choose{
+    margin-top: 1em;
+    width: 60%;
+    margin-left: 3em;
+    table-layout: fixed;
+    border: 1px solid rgb(204,204,204);
+    border-collapse: collapse;
+}
+.m-choose td input{
+    vertical-align: middle;
+}
+.m-choose label{
+    width: 100%;
+}
+.m-choose td:not(.u-mid){
+    text-align: left;
+    padding: .5em;
+}
+.m-choose .u-mid{
+    text-align: center;
+    border-right: 1px solid rgb(204,204,204);
+}
+.m-choose .u-tp{
+    border-top: 1px solid rgb(204,204,204);
+}
+@media (max-width: 480px) {
+    .g-wrap2{
+        padding: 0;
+    }
+    .m-item .u-file+span{
+        display: block;
+        margin: 0 auto;
+        width: 15rem;
+    }
+}
+@media (max-width: 768px) {
+    .g-wrap2{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .g-bd2{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .m-item>input[type=text], .m-item input[type=date], .m-item select{
+        width: 52%;
+    }
+    .m-item textarea{
+        width: 52%;
+    }
+}
+@media (max-width: 468px) {
+    .m-item{
+        padding: 1.5rem 0;
+    }
+    .m-item .m-choose{
+        width: 100%;
+        margin-left: 0;
+    }
+    .m-item .u-mark{
+        display: block;
+        padding: 0 19%;
+    }
+}

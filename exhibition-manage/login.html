@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <title>非常会展后台管理系统-登录</title>
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="wrap1">
+    <div class="g-hd">
+        <div class="m-nav">
+            非常会展后台管理系统
+        </div>
+    </div>
+    <div class="g-bd1">
+        <div class="m-hd1">
+            <h2>非常会展后台管理系统登录</h2>
+        </div>
+        <div class="m-fm1">
+            <form action="index.html" data-validator-option="{timely:1}">
+                <div class="u-name f-cb">
+                        <label for="username">
+                            <i class="fa fa-user"></i>
+                        </label>
+                    <input type="text" id="username" data-rule="required;" data-tip="请输入用户名" placeholder="请输入您的用户名"/>
+                </div>
+                <div class="u-pwd">
+                    <label for="pwd">
+                        <i class="fa fa-unlock-alt"></i>
+                    </label>
+                    <input type="password" id="pwd" data-rule="required;" data-tip="请输入密码" placeholder="请输入您的密码"/>
+                </div>
+                <button type="submit" class="u-btn-green u-btn-log">登&nbsp;&nbsp;录</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/nicevalidator/jquery.validator.min.js?local=zh-CN"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

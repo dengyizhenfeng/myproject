@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非常会展后台管理系统-编辑企业</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/operate.css"/>
+</head>
+<body>
+<div class="g-wrap2">
+    <div class="m-tt f-cb">
+        <h2 class="manage">编辑企业</h2>
+        <a href="company.html" class="u-btn-green u-btn-manage">企业管理</a>
+    </div>
+    <div class="g-bd2">
+        <form action="" data-validator-option="{timely:1}">
+            <div class="m-item">
+                <label for="c" class="category-name"><i class="fa fa-asterisk"></i>企业名称：</label>
+                <input type="text" id="c" placeholder="企业名称" data-rule="required;" data-tip="请输入企业名称"/>
+            </div>
+            <div class="m-item">
+                <label for="aSite" class="category-name"><i class="fa fa-asterisk"></i>简介：</label>
+                <textarea name="" id="aSite" data-rule="required;" placeholder="简介"></textarea>
+            </div>
+            <div class="m-item">
+                <label for="a" class="category-name">链接：</label>
+                <input type="text" id="a" data-rule="url" placeholder="链接"/>
+            </div>
+            <div class="m-sub">
+                <div class="u-inline">
+                    <button id="sub"></button>
+                    <label for="sub" class="u-btn-green u-btn-ms">确定</label>
+                    <input type="reset" value="重置" class="u-btn-white u-btn-reset"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/nicevalidator/jquery.validator.min.js?local=zh-CN"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
